@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+   <title>HMS</title>
+   <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+   <!-- Core theme CSS (includes Bootstrap)-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-SGk+fcYwF7rNoxKiWeO7kZCK0oKbX65DvFprwjGSrmJItPjKpB7r+z/E89x0k/aV5Z3q5lXo5I0iyuLP7Vz/jw==" crossorigin="anonymous" />
+
+   <link rel="stylesheet" href="style.css">
+   <link href="css/styles.css" rel="stylesheet">
+      <style media="screen">
+      /* Style the form container */
+form {
+border: 1px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+width: 300px;
+margin: 0 auto;
+}
+
+/* Style the labels */
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+/* Style the select dropdown */
+select {
+width: 100%;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+/* Style the input fields */
+input[type="email"],
+input[type="password"] {
+width: 100%;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+margin-bottom: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+background-color: #61b8c3;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+background-color: black;
+}
+.form{
+   background-color: #ccc;
+   margin:50px 500px;
+   padding: 30px 0px;
+}
+.option{
+   background-color:#ccc
+   width:300px;
+   margin-bottom:100px;
+}
+.class-option{
+   <!-- margin-bottom:400px; -->
+}
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">Hospital Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                  class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" aria-current="page" href="logout.php">Log Out</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <h1 style="text-align:center; margin:50px 0px 100px;">Admin Management System</h1>
+      <div class="row class-option">
+         <div class="option col-6">
+            <form class="" action="aduser.html" method="post">
+               <input style="width:100%;" class="btn btn-outline-primary" type="submit" name="send" value="Add Doctor/Admin">
+            </form>
+         </div>
+         <div class="option col-6">
+            <form class="" action="view.php" method="post">
+               <input style="width:100%;" class="btn btn-outline-primary" type="submit" name="send" value="Manage Doctors/Admins">
+            </form>
+         </div>
+         <div class="option col-6">
+            <form class="" action="reportview.php" method="post">
+               <input style="width:100%;" class="btn btn-outline-primary" type="submit" name="send" value="View Reports">
+            </form>
+         </div>
+         <div class="option col-6">
+            <form class="" action="contact-view.php" method="post">
+               <input style="width:100%;" class="btn btn-outline-primary" type="submit" name="send" value="Manage Contacts">
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
